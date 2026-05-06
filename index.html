@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arron Creighton | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .selection-blue::selection { background-color: rgba(59, 130, 246, 0.3); }
+        .icon-hover:hover { transform: translateY(-2px); }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-200 selection-blue">
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed top-0 w-full z-50 transition-all duration-300 py-6 bg-transparent">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <span class="text-xl font-bold bg-gradient-to-r from-blue-400 to-emerald-400 bg-clip-text text-transparent">
+                AC.
+            </span>
+            <div class="hidden md:flex space-x-8">
+                <a href="#about" class="text-sm font-medium hover:text-blue-400 transition-colors">About</a>
+                <a href="#skills" class="text-sm font-medium hover:text-blue-400 transition-colors">Skills</a>
+                <a href="#experience" class="text-sm font-medium hover:text-blue-400 transition-colors">Experience</a>
+                <a href="#projects" class="text-sm font-medium hover:text-blue-400 transition-colors">Projects</a>
+            </div>
+            <a href="mailto:arroncreighton@gmail.com" class="px-5 py-2 rounded-full bg-blue-600 hover:bg-blue-500 text-white text-sm font-medium transition-all transform hover:scale-105">
+                Contact Me
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-32 pb-20 px-6">
+        <div class="container mx-auto max-w-5xl">
+            <div class="flex flex-col items-start">
+                <div class="inline-flex items-center px-3 py-1 rounded-full border border-blue-500/30 bg-blue-500/10 text-blue-400 text-xs font-medium mb-6">
+                    <span class="relative flex h-2 w-2 mr-2">
+                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
+                    </span>
+                    Open to New Opportunities
+                </div>
+                <h1 class="text-5xl md:text-7xl font-bold text-white mb-6 tracking-tight leading-tight">
+                    Arron Creighton
+                </h1>
+                <p class="text-xl md:text-2xl text-slate-400 mb-8 max-w-2xl leading-relaxed">
+                    Data Analytics Apprentice at <span class="text-blue-400 font-semibold">Google</span>. 
+                    Bridging the gap between complex data systems and logistical excellence.
+                </p>
+                
+                <div class="flex flex-wrap gap-4 mb-12">
+                    <div class="flex items-center text-slate-400 mr-4">
+                        <i data-lucide="map-pin" class="w-4 h-4 mr-2"></i>
+                        Brooklyn, NY
+                    </div>
+                    <div class="flex gap-6">
+                        <a href="https://github.com/arroncreighton" class="text-slate-400 hover:text-white transition-all icon-hover" aria-label="GitHub">
+                            <i data-lucide="github" class="w-6 h-6"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/arron-creighton-a8081759/" class="text-slate-400 hover:text-white transition-all icon-hover" aria-label="LinkedIn">
+                            <i data-lucide="linkedin" class="w-6 h-6"></i>
+                        </a>
+                        <a href="mailto:arroncreighton@gmail.com" class="text-slate-400 hover:text-white transition-all icon-hover" aria-label="Email">
+                            <i data-lucide="mail" class="w-6 h-6"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-slate-900/50">
+        <div class="container mx-auto px-6 max-w-5xl">
+            <div class="flex flex-col md:flex-row gap-12 items-center">
+                <div class="w-full md:w-1/2">
+                    <h2 class="text-3xl font-bold text-white mb-6">Professional Summary</h2>
+                    <p class="text-slate-400 leading-relaxed mb-6">
+                        Analytical and detail-oriented professional with a background in computer systems and logistical operations. 
+                        I specialize in integrating technical data management with hands-on warehouse experience to optimize inventory 
+                        accuracy and workflow efficiency.
+                    </p>
+                    <p class="text-slate-400 leading-relaxed">
+                        With proficiency in MySQL, Python, and modern visualization tools, I have a proven track record of using 
+                        data-driven insights to solve complex operational challenges in fast-paced environments.
+                    </p>
+                </div>
+                <div class="w-full md:w-1/2 grid grid-cols-2 gap-4">
+                    <div class="p-6 rounded-2xl bg-slate-800/50 border border-slate-700">
+                        <div class="text-blue-400 font-bold text-3xl mb-1">4+</div>
+                        <div class="text-slate-400 text-sm">Years Ops Experience</div>
+                    </div>
+                    <div class="p-6 rounded-2xl bg-slate-800/50 border border-slate-700">
+                        <div class="text-emerald-400 font-bold text-3xl mb-1">SQL</div>
+                        <div class="text-slate-400 text-sm">Expertise</div>
+                    </div>
+                    <div class="p-6 rounded-2xl bg-slate-800/50 border border-slate-700 col-span-2">
+                        <div class="text-white font-semibold mb-2 flex items-center">
+                            <i data-lucide="graduation-cap" class="w-4 h-4 mr-2 text-blue-400"></i> Education
+                        </div>
+                        <div class="text-slate-300 text-sm font-medium">Google Data Analytics Professional Cert</div>
+                        <div class="text-slate-400 text-xs mt-1">Associate's Degree: Computer Systems Technology | TCI College</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 px-6">
+        <div class="container mx-auto max-w-5xl">
+            <h2 class="text-3xl font-bold text-white mb-12 text-center">Technical Toolkit</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Skill 1 -->
+                <div class="p-6 rounded-2xl bg-slate-900 border border-slate-800 hover:border-blue-500/50 transition-all group">
+                    <div class="w-10 h-10 rounded-lg bg-blue-500/10 flex items-center justify-center text-blue-400 mb-4 group-hover:scale-110 transition-transform">
+                        <i data-lucide="bar-chart-3" class="w-5 h-5"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-white mb-4">Data Analysis</h3>
+                    <ul class="space-y-2 text-slate-400 text-sm">
+                        <li class="flex items-center"><i data-lucide="chevron-right" class="w-3 h-3 mr-2 text-blue-500"></i>Data Cleaning</li>
+                        <li class="flex items-center"><i data-lucide="chevron-right" class="w-3 h-3 mr-2 text-blue-500"></i>Statistical Analysis</li>
+                        <li class="flex items-center"><i data-lucide="chevron-right" class="w-3 h-3 mr-2 text-blue-500"></i>Critical Thinking</li>
+                        <li class="flex items-center"><i data-lucide="chevron-right" class="w-3 h-3 mr-2 text-blue-500"></i>Trend ID</li>
+                    </ul>
+                </div>
+                <!-- Skill 2 -->
+                <div class="p-6 rounded-2xl bg-slate-900 border border-slate-800 hover:border-blue-500/50 transition-all group">
+                    <div class="w-10 h-10 rounded-lg bg-blue-500/10 flex items-center justify-center text-blue-400 mb-4 group-hover:scale-110 transition-transform">
+                        <i data-lucide="terminal" class="w-5 h-5"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-white mb-4">Tools</h3>
+                    <ul class="space-y-2 text-slate-400 text-sm">
+                        <li class="flex items-center"><i data-lucide="chevron-right" class="w-3 h-3 mr-2 text-blue-500"></i>MySQL</li>
+                        <li class="flex items-center"><i data-lucide="chevron-right" class="w-3 h-3 mr-2 text-blue-500"></i>Python</li>
+                        <li class="flex items-center"><i data-lucide="chevron-right" class="w-3 h-3 mr-2 text-blue-500"></i>HTML/CSS</li>
+                        <li class="flex items-center"><i data-lucide="chevron-right" class="w-3 h-3 mr-2 text-blue-500"></i>Excel</li>
+                    </ul>
+                </div>
+                <!-- Skill 3 -->
+                <div class="p-6 rounded-2xl bg-slate-900 border border-slate-800 hover:border-blue-500/50 transition-all group">
+                    <div class="w-10 h-10 rounded-lg bg-blue-500/10 flex items-center justify-center text-blue-400 mb-4 group-hover:scale-110 transition-transform">
+                        <i data-lucide="database" class="w-5 h-5"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-white mb-4">Visualization</h3>
+                    <ul class="space-y-2 text-slate-400 text-sm">
+                        <li class="flex items-center"><i data-lucide="chevron-right" class="w-3 h-3 mr-2 text-blue-500"></i>Tableau</li>
+                        <li class="flex items-center"><i data-lucide="chevron-right" class="w-3 h-3 mr-2 text-blue-500"></i>Power BI</li>
+                        <li class="flex items-center"><i data-lucide="chevron-right" class="w-3 h-3 mr-2 text-blue-500"></i>Presentations</li>
+                    </ul>
+                </div>
+                <!-- Skill 4 -->
+                <div class="p-6 rounded-2xl bg-slate-900 border border-slate-800 hover:border-blue-500/50 transition-all group">
+                    <div class="w-10 h-10 rounded-lg bg-blue-500/10 flex items-center justify-center text-blue-400 mb-4 group-hover:scale-110 transition-transform">
+                        <i data-lucide="boxes" class="w-5 h-5"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-white mb-4">Operational</h3>
+                    <ul class="space-y-2 text-slate-400 text-sm">
+                        <li class="flex items-center"><i data-lucide="chevron-right" class="w-3 h-3 mr-2 text-blue-500"></i>Logistics Coord</li>
+                        <li class="flex items-center"><i data-lucide="chevron-right" class="w-3 h-3 mr-2 text-blue-500"></i>Inventory Mgmt</li>
+                        <li class="flex items-center"><i data-lucide="chevron-right" class="w-3 h-3 mr-2 text-blue-500"></i>Cycle Counting</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-20 bg-slate-900/50 px-6">
+        <div class="container mx-auto max-w-5xl">
+            <h2 class="text-3xl font-bold text-white mb-12 flex items-center">
+                <i data-lucide="briefcase" class="mr-4 text-blue-400"></i> Professional Experience
+            </h2>
+            <div class="space-y-8">
+                <!-- Google -->
+                <div class="relative pl-8 border-l border-slate-700 pb-8 last:pb-0">
+                    <div class="absolute left-[-5px] top-0 w-[9px] h-[9px] rounded-full bg-blue-500"></div>
+                    <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
+                        <div>
+                            <h3 class="text-xl font-bold text-white">Data Analytics Apprentice</h3>
+                            <div class="text-blue-400 font-medium text-lg">Google</div>
+                        </div>
+                        <div class="text-slate-400 text-sm bg-slate-800 px-3 py-1 rounded-full mt-2 md:mt-0">
+                            Feb 2025 - Present
+                        </div>
+                    </div>
+                    <ul class="space-y-3 text-slate-400 text-sm leading-relaxed">
+                        <li>Applied advanced analytical methodologies to real-world datasets, focusing on data integrity and actionable insights.</li>
+                        <li>Utilized SQL for complex data retrieval and manipulation, streamlining reporting processes for stakeholders.</li>
+                        <li>Developed visualization dashboards to communicate technical findings to non-technical audiences.</li>
+                    </ul>
+                </div>
+                <!-- Odeko -->
+                <div class="relative pl-8 border-l border-slate-700 pb-8 last:pb-0">
+                    <div class="absolute left-[-5px] top-0 w-[9px] h-[9px] rounded-full bg-blue-500"></div>
+                    <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
+                        <div>
+                            <h3 class="text-xl font-bold text-white">Warehouse Associate</h3>
+                            <div class="text-blue-400 font-medium text-lg">Odeko</div>
+                        </div>
+                        <div class="text-slate-400 text-sm bg-slate-800 px-3 py-1 rounded-full mt-2 md:mt-0">
+                            July 2021 - Feb 2025
+                        </div>
+                    </div>
+                    <ul class="space-y-3 text-slate-400 text-sm leading-relaxed">
+                        <li>Managed inventory accuracy by conducting regular cycle counts and physical audits, reconciling data discrepancies.</li>
+                        <li>Coordinated receiving and dispatch workflows, ensuring 100% verification of quantities against purchase orders.</li>
+                        <li>Maintained high-volume order fulfillment targets through meticulous attention to detail to achieve a 95% success rate.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 px-6">
+        <div class="container mx-auto max-w-5xl">
+            <h2 class="text-3xl font-bold text-white mb-12 flex items-center">
+                <i data-lucide="code-2" class="mr-4 text-emerald-400"></i> Featured Projects
+            </h2>
+            <div class="grid md:grid-cols-1 gap-8">
+                <div class="group relative rounded-3xl bg-slate-900 border border-slate-800 overflow-hidden hover:border-blue-500/50 transition-all">
+                    <div class="p-8">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-2xl font-bold text-white group-hover:text-blue-400 transition-colors">
+                                2025 NYC Payroll Dashboard
+                            </h3>
+                            <a href="#" class="text-slate-400 hover:text-white transition-colors">
+                                <i data-lucide="external-link" class="w-5 h-5"></i>
+                            </a>
+                        </div>
+                        <p class="text-slate-400 mb-6 max-w-3xl leading-relaxed">
+                            A Python-powered dashboard providing real-time analysis and visualizations for NYC employee payroll data. Built to demonstrate advanced data cleaning and visualization capabilities using modern Python libraries.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 rounded-full bg-slate-800 text-slate-300 text-xs font-medium border border-slate-700">Python</span>
+                            <span class="px-3 py-1 rounded-full bg-slate-800 text-slate-300 text-xs font-medium border border-slate-700">Pandas</span>
+                            <span class="px-3 py-1 rounded-full bg-slate-800 text-slate-300 text-xs font-medium border border-slate-700">Dash/Plotly</span>
+                            <span class="px-3 py-1 rounded-full bg-slate-800 text-slate-300 text-xs font-medium border border-slate-700">Data Cleaning</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 border-t border-slate-800 bg-slate-950 px-6">
+        <div class="container mx-auto max-w-5xl text-center">
+            <p class="text-slate-500 text-sm mb-6">
+                © <span id="year"></span> Arron Creighton. Built with HTML, Tailwind CSS & Lucide.
+            </p>
+            <div class="flex justify-center items-center space-x-8">
+                <a href="https://github.com/arroncreighton" class="group flex items-center text-slate-500 hover:text-white transition-colors font-medium">
+                    <i data-lucide="github" class="w-5 h-5 mr-2 group-hover:text-blue-400 transition-colors"></i>GitHub
+                </a>
+                <a href="https://www.linkedin.com/in/arron-creighton-a8081759/" class="group flex items-center text-slate-500 hover:text-white transition-colors font-medium">
+                    <i data-lucide="linkedin" class="w-5 h-5 mr-2 group-hover:text-blue-400 transition-colors"></i>LinkedIn
+                </a>
+                <a href="mailto:arroncreighton@gmail.com" class="group flex items-center text-slate-500 hover:text-white transition-colors font-medium">
+                    <i data-lucide="mail" class="w-5 h-5 mr-2 group-hover:text-blue-400 transition-colors"></i>Email
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Icons
+        lucide.createIcons();
+
+        // Navbar Scroll Effect
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('bg-slate-950/80', 'backdrop-blur-md', 'border-b', 'border-slate-800', 'py-4');
+                navbar.classList.remove('bg-transparent', 'py-6');
+            } else {
+                navbar.classList.remove('bg-slate-950/80', 'backdrop-blur-md', 'border-b', 'border-slate-800', 'py-4');
+                navbar.classList.add('bg-transparent', 'py-6');
+            }
+        });
+
+        // Set Current Year
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
